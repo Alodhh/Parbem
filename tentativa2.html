@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns</title>
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Rubik+Puddles&display=swap');
+    
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm6moKjZMhx0fFO_gDY71FC9vQG1q0K8PzCg&usqp=CAU');
+        
+    } 
+      
+    .coluna1, coluna2 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .duascol {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .container {
+        position: relative;
+        width: 175px;
+        height: 175px;
+        margin-bottom: 50px;
+    }
+    
+    #texto {
+       position: absolute;
+       top: 0px;
+       left: 0;
+       display: none;
+       width: 100%;
+       height: 100%;
+       color: white; 
+       padding: 0px;
+       transition: opacity 0.5s ease;
+       font-size: 14px;
+       border: 2px solid white;
+       font-family: 'Pangolin', cursive;
+    }
+
+    #imagem {
+       cursor: pointer;
+       transition: opacity 0.5s ease;
+       border: 2px solid white;
+    }
+    
+    .mostrar {
+       opacity: 0;
+       pointer-events: none;
+}
+
+    h1 {
+        //font-family: 'Rubik Puddles', cursive;
+        font-size: 25px;
+        padding: 1px;
+        margin: 1px;
+        color: white;
+        top: 50px;
+        
+    }
+    
+    .titulo_cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //background-color: #8b008b;
+        align-items: center;
+    }
+    
+    .espaco {
+        height: 10px;
+    }
+        
+    </style>
+    <script>
+    
+function mostrarTexto(elemento) {
+  var imagem = elemento;
+  var texto = elemento.nextElementSibling;
+
+  imagem.classList.add("mostrar");
+  texto.style.display = "block";
+  setTimeout(function() {
+    texto.style.opacity = 1;
+  }, 50); 
+}
+
+    </script>
+</head>
+<body>
+    <div class="titulo_cont">
+    <h1 class="titulo">Toque nos gatinhos</h1>
+    <h2>😺👈🤓</h2>       
+    </div>
+    <div class="espaco">
+    </div>
+    <div class="duascol">
+    <div class="coluna1">
+    
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3UG6KfVMH4MJFmraV0UXbYch_8a4JRYRog&usqp=CAU" height="175px" width="175px" alt="gato1" id="imagem" onclick="mostrarTexto(this)">
+    <p style="background-color:rgb(70,130,180); text-shadow: 2px 2px 4px #000000;" id="texto">Sabe, eu pensei muito em fazer uma cartinha, um post no status, ou uma mensagem no seu pv kkkkk. Mas eu quis fazer diferente, no meu estilo, então aqui está, um site só pra ti kkkkk</p>
+    </div>
+    
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rafK7SlS4prNpJHfFhGoV7iPKQQx0jvpaA&usqp=CAU" height="175px" width="175px" alt="gato1" id="imagem" onclick="mostrarTexto(this)">
+    <p style="background-color:rgb(139,0,0); text-shadow: 2px 2px 4px #000000;" id="texto">A gente se estranhava bastante, e demorou pra começarmos a nos falar normalmente, mas quando aconteceu, fluiu de um jeito gigantesco. Dá pra ficar até amanhã falando coisas boas pra ti, falando como vc é simpática, carinhosa, elétrica, carismática, proativa...</p>
+    </div>
+    
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMV6tmrxFlZD8SyqjxIq6-bGKP2Z8JEylag&usqp=CAU" height="175px" width="175px" alt="gato1" id="imagem" onclick="mostrarTexto(this)">
+    <p style="background-color:rgb(244,164,96); text-shadow: 2px 2px 4px #000000;" id="texto">Você passou por muita coisa, é uma pessoa forte, e tbm se preocupa com aqueles a sua volta, é muito dedicada, e isso eu pude conhecer em pouco tempo (poxa, você me deu um cordão com uma semana de amizade), uma pessoa muito dócil</p>
+    </div>
+    </div>
+    <div class="coluna2">
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLk5OFfiDEgJIcCWyx3lgzfqq-832jGZ1r2g&usqp=CAU" height="175px" width="175px" alt="gato1" id="imagem" onclick="mostrarTexto(this)">
+    <p style="background-color:rgb(240,230,140); text-shadow: 2px 2px 4px #000000;" id="texto">Eu sempre via vc apresentando, auxiliando, sempre prestando serviço pra Deus. Vc se abria de uma forma que era rara de ver, se entregava de vdd, e isso era perceptível, vc amava fazer aquilo, e ainda ama, vc é uma filha de Deus</p>
+    </div>
+    
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzadtukSXmzwYnDErmjLn2ykJFaS3b_AvQQ&usqp=CAU" height="175px" width="175px" alt="gato1" id="imagem" onclick="mostrarTexto(this)">
+    <p style="background-color:rgb(154,205,50); text-shadow: 2px 2px 4px #000000;" id="texto">Mas melhor do que falar o que vc é, é mostrar, mostrar as pessoas que vc impactou, as coisas boas que vc fez, as almas que vc tocou, vc é uma pessoa incrível Dudinha, de vdd, vc tem muito pra conquistar ainda, a sua caminhada só começou</p>
+    </div>
+    
+    <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0lUmjVzbluvX2MXH1TPoj_DIdo7PToISyYw&usqp=CAU" height="175px" width="175px" alt="gato1" id="imagem" onclick="mostrarTexto(this)">
+    <p style="background-color:rgb(221,160,221); text-shadow: 2px 2px 4px #000000;" id="texto">Então eu queria, com minha maior sinceridade, vir lhe dar os parabéns que você tanto merece, Parabéns Dudinha, parabéns pelo o que você foi, o que você é, e pelo o que você virá a ser, Deus está contigo, e eu te amo ❤️⚡</p>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
